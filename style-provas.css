@@ -1,0 +1,87 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+
+}
+
+/* Estilo para os títulos das seções fora dos cards */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section.container{
+  margin-bottom: 2rem;
+}
+
+/* Container para organizar os cards lado a lado */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se não houver espaço suficiente */
+  gap: 1rem; /* Espaçamento entre os cards */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+}
+
+/* Estilo para os cards */
+.card {
+  flex: 1 1 calc(50% - 1rem); /* Faz com que cada card ocupe aproximadamente metade da largura do contêiner, ajustando para o espaçamento */
+  max-width: 500px; /* Define uma largura máxima para os cards */
+  margin: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Inclui o padding e border no cálculo da largura e altura */
+  background-color: #5C93AA;
+}
+
+/* Estilo para os links dentro dos cards */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 0px;
+  padding: 5px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo para links ao passar o mouse dentro dos cards */
+.card-link:hover {
+  border-radius: 0.25rem;
+  border: 2px solid #007bff; /* Borda azul ao passar o mouse */
+  background-color: #e9ecef; /* Cor de fundo ao passar o mouse */
+}
+
+h2.text-center{
+  margin: 2rem;
+}
+
+h5.section-title{
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

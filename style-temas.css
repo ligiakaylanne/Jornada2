@@ -1,0 +1,59 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+  
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-social {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+/* Centraliza o contêiner de provas */
+.container-provas {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo do grid de provas */
+.provas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+  gap: 10px; /* Espaçamento entre os cards */
+  max-width: 1200px; /* Largura máxima do grid, ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza horizontalmente o grid dentro do contêiner pai */
+}
+
+.card-header {
+  text-align: center; /* Centraliza o texto*/
+  background-color: #1F5372;
+  color: #ffff;
+
+}
+
+.card-text{
+  color: black;
+  text-align: center;
+}
+
+.card-body{
+  color: #1F5372;
+}
+
+.card {
+  border: 1px solid #1F5372; 
+}
