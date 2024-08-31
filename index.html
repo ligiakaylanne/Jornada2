@@ -9,86 +9,74 @@
     <link rel="stylesheet" href="/style-padrao.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid navbar-custom">
-      <a class="navbar-brand" href="/index.html">Jornada Enem</a>
-      <div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/provas.html">Provas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/calculadora.html">Calculadora</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cronometro.html">Cronômetro</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Redação
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/dicas.html">Dicas</a></li>
-              <li><a class="dropdown-item" href="#">Folha em PDF</a></li>
-              <li><a class="dropdown-item" href="/temas-redacoes.html">Temas</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/professores.html">Professores</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid navbar-custom">
+    <a class="navbar-brand" href="/index.html">Jornada Enem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/provas.html">Provas</a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadora.html">Calculadora</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cronometro.html">Cronômetro</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Redação</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/dicas.html">Dicas</a></li>
+            <li><a class="dropdown-item" href="#">Folha em PDF</a></li>
+            <li><a class="dropdown-item" href="/temas-redacoes.html">Temas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/professores.html">Professores</a></li>
+      </ul>
     </div>
-  </nav>
-  
-  <div>
-    <div class="container-fluid bg-custom">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card custom-card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Bem-vindo à sua Jornada Sucesso para o ENEM!</h5>
-              <p class="card-text">Explore agora e mergulhe em um mundo de possibilidades</p>
-              <a href="/assuntos.html" class="card-link">Assuntos que mais caem no Enem</a>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="col-md-6">
-          <div id="carouselExampleIndicators" class="carousel slide h-100">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
-              </div>
-              <div class="carousel-item">
-                <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
-              </div>
-              <div class="carousel-item">
-                <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container-fluid bg-custom py-4">
+  <div class="row gx-4">
+    <div class="col-md-6 mb-4">
+      <div class="card custom-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Bem-vindo à sua Jornada Sucesso para o ENEM!</h5>
+          <p class="card-text">Explore agora e mergulhe em um mundo de possibilidades</p>
+          <a href="/assuntos.html" class="card-link">Assuntos que mais caem no Enem</a>
         </div>
       </div>
     </div>
-  <br><br><br>
+    <div class="col-md-6 mb-4">
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagens/home/estudante.jpeg" class="d-block w-100 img-fluid" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div id="countdown" class="text-center mt-4">
     <h3 class="mb-4">Faltam para o Enem:</h3>

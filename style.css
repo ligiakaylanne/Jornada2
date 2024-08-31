@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: Arial, sans-serif; /* Defina uma fonte padrão */
 }
 
 /* Estilo para a seção com fundo personalizado */
@@ -14,7 +15,7 @@ body {
   width: 100vw;
   margin: 0;
   position: relative;
-  height: 300px;
+  padding: 20px 0; /* Adiciona espaçamento interno */
 }
 
 /* Remove margens das colunas */
@@ -24,7 +25,6 @@ body {
 
 /* Estilo para o carrossel */
 .carousel {
-  height: 200px;
   margin-top: 25px; /* Ajuste o valor conforme necessário */
 }
 
@@ -33,19 +33,9 @@ body {
 }
 
 .carousel-inner img {
-  height: 250px;
-  width: auto;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  width: 100%; /* Ajusta a largura para ocupar o container */
   object-fit: cover;
-}
-
-#carouselExampleIndicators {
-  max-height: 500px;
-}
-
-@media (max-width: 768px) {
-  #carouselExampleIndicators {
-    max-height: 300px;
-  }
 }
 
 /* Estilo para as colunas com layout flexível */
@@ -53,15 +43,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px; /* Adiciona espaçamento interno */
 }
 
 /* Estilo básico para o card */
 .card {
   max-width: 250px;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem;
   text-align: center;
-  background-color: #5C93AA; /* Laranja claro suave */
+  background-color: #5C93AA; /* Azul claro suave */
   color: #ffffff;
   border: 1px solid #B0BEC5; /* Cinza claro */
   border-radius: 12px;
@@ -108,7 +99,7 @@ body {
 .custom-card .card-link {
   background-color: #0C3756; /* Azul mais escuro */
   color: #FFFFFF;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
   display: inline-block;
@@ -136,7 +127,7 @@ body {
 /* Grade de itens FAQ */
 .faq-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   align-items: start; /* Garante que cada item alinhe-se ao topo */
 }
@@ -218,17 +209,14 @@ body {
 @media (max-width: 500px) {
   .section-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start; /* Alinhar ao topo para manter alinhado */
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; /* Alinhar ao centro para melhor visualização */
+    justify-content: center;
     flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
   }
 
   .card, .carousel {
-    width: 48%; /* Ajuste o tamanho conforme necessário para melhor se adequar ao design */
-  }
-
-  .card {
+    width: 100%; /* Ajusta o tamanho para ocupar toda a largura */
     margin-bottom: 10px; /* Ajustar margem inferior para espaçamento */
   }
 
