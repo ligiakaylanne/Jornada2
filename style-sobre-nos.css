@@ -1,82 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden; /* Esconde a rolagem horizontal */
-
-}
-
-section.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-section.quem-somos > h2{
-    text-align: center;
-    padding: 2rem 0rem;
-}
-
-section.quem-somos > p{
-    margin-bottom: 1rem;
-    line-height: 27px;
-}
-
-section.nossa-missao{
-    margin: 3rem 0rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5rem;
-}
-
-section.nossa-missao > div > h2{
-    margin-bottom: 2rem;
-}
-
-section.nossa-missao > div > p{
-    line-height: 27px;
-}
-
-img.foto-nossa-missao{
-    margin-top: 2rem;
-    border-radius: 50%;
-    width: 25rem;
-}
-
-section.nossa-historia > h2{
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-}
-
-section.outra-secao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5rem;
-    margin-top: 2rem;
-}
-
-section.outra-secao > div{
-    margin-top: 2rem;
-} 
-
-section.outra-secao > div > h2{
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-section.outra-secao > div > p{
-    line-height: 27px;
-}
-
-section.nosso-time > h2{
-    text-align: center;
-    margin: 3rem 0rem;
-    width: 100%;
 }
 
 .container {
@@ -85,25 +13,48 @@ section.nosso-time > h2{
     padding: 20px;
 }
 
-.quem-somos, .nossa-missao, .nossa-historia, .nosso-time {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.quem-somos p, .nossa-historia p {
-    color: #666;
-    line-height: 1.6;
-}
-
-.nossa-missao, .outra-secao {
+section.container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.quem-somos > h2,
+section.nossa-historia > h2,
+section.nosso-time > h2 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+section.quem-somos > p {
+    margin-bottom: 1rem;
+    line-height: 27px;
+}
+
+section.nossa-missao,
+section.outra-secao {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+section.nossa-missao > div > h2,
+section.outra-secao > div > h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section.nossa-missao > div > p,
+section.outra-secao > div > p {
+    line-height: 27px;
+}
+
+img.foto-nossa-missao {
+    margin-top: 2rem;
+    border-radius: 50%;
+    width: 25rem;
 }
 
 .imagem-container {
@@ -122,23 +73,57 @@ h2 {
 }
 
 .imagens-membros img {
-    width: 150px; /* Definindo uma largura fixa */
-    height: 150px; /* Definindo uma altura fixa */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover; /* Garante que a imagem seja cortada e não distorcida */
-    object-position: center; /* Centraliza o conteúdo da imagem */
-    
+    object-fit: cover;
+    object-position: center;
 }
 
 .imagens-membros figcaption {
     margin-top: 10px;
     color: #333;
-    border: 1px solid black;
-
-}
-figcaption{
     background-color: #5C93AA;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    section.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.nossa-missao, 
+    section.outra-secao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagem-container {
+        flex-direction: column;
+    }
+
+    .imagens-membros img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Estilo para tablets e telas maiores */
+@media (min-width: 769px) and (max-width: 1200px) {
+    section.nossa-missao, 
+    section.outra-secao {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imagem-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
