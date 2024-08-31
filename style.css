@@ -26,7 +26,6 @@ body {
 .carousel {
   height: 200px;
   margin-top: 25px; /* Ajuste o valor conforme necessário */
-
 }
 
 .carousel-inner {
@@ -37,6 +36,16 @@ body {
   height: 250px;
   width: auto;
   object-fit: cover;
+}
+
+#carouselExampleIndicators {
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    max-height: 300px;
+  }
 }
 
 /* Estilo para as colunas com layout flexível */
@@ -119,21 +128,9 @@ body {
 
 .title-h1-main {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-/* Contêiner principal */
-.faq-container {
-  padding: 20px;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-/* Título da seção */
-.title-h1-main {
-  text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
+  color: #333;
 }
 
 /* Grade de itens FAQ */
@@ -214,6 +211,29 @@ body {
   .keyboard {
     width: 14px;
     height: 8px;
+  }
+}
+
+/* Ajustes para layout em telas menores */
+@media (max-width: 500px) {
+  .section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinhar ao topo para manter alinhado */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+  }
+
+  .card, .carousel {
+    width: 48%; /* Ajuste o tamanho conforme necessário para melhor se adequar ao design */
+  }
+
+  .card {
+    margin-bottom: 10px; /* Ajustar margem inferior para espaçamento */
+  }
+
+  .carousel {
+    margin-top: 10px; /* Ajustar margem superior para espaçamento */
   }
 }
 
