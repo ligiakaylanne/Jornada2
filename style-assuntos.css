@@ -188,3 +188,23 @@ footer {
         margin-top: 20px; /* Margem superior reduzida */
     }
 }
+
+@media (max-width: 768px) {
+    h1, h3 {
+        font-size: 1.5rem; /* Reduz o tamanho das fontes para títulos em telas menores */
+        text-align: center; /* Centraliza os títulos em telas menores */
+    }
+
+    #conteudos h5 {
+        font-size: 1.25rem; /* Ajusta o tamanho das fontes dos subtítulos */
+    }
+
+    #conteudos ul {
+        padding-left: 20px; /* Diminui o padding para listas */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Centraliza os itens do menu na navegação colapsada */
+    }
+    
+}

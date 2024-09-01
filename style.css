@@ -99,7 +99,7 @@ body {
 .custom-card .card-link {
   background-color: #0C3756; /* Azul mais escuro */
   color: #FFFFFF;
-  padding: 10px 20px;
+  padding: 2px 10px;
   border-radius: 20px;
   text-decoration: none;
   display: inline-block;
@@ -107,7 +107,7 @@ body {
 }
 
 .custom-card .card-link:hover {
-  background-color: #01579B; /* Azul muito escuro */
+  background-color: #3A728E; /* Azul muito escuro */
 }
 
 /* Estilos para a seção de perguntas frequentes */
