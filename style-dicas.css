@@ -52,7 +52,23 @@ h3 {
   .faq-item {
     flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível */
   }
+  body {
+    font-size: 14px; /* Reduz a fonte em dispositivos menores */
+  }
+  .d-flex {
+    flex-direction: column; /* Empilha os vídeos em telas menores */
+  }
 
+  .video-container {
+    width: 100%; /* Largura completa do contêiner do vídeo */
+    margin-bottom: 20px; /* Espaço entre os vídeos */
+  }
+
+  iframe {
+    width: 100%; /* Largura total do iframe do vídeo */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+}
   .footer-container {
     flex-direction: column; /* Alinha os itens em coluna */
     align-items: center; /* Centraliza os itens */
