@@ -60,7 +60,7 @@ div.professores {
 /* Estiliza os links dentro de 'professores', adicionando uma borda preta, bordas arredondadas, 
    padding, centraliza o texto e ajusta a largura para 250px. Utiliza flexbox para centralizar o conteúdo. */
 div.professores > a {
-    border: 1px solid black;
+    border: none;
     border-radius: 17px;
     padding: 15px;
     text-align: center;
