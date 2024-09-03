@@ -53,6 +53,11 @@ h3 {
 /* Centraliza os subtítulos (h3) e adiciona uma margem de 50px em volta para espaçamento. */
 
 .card-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
     text-align: center;
     border: 2px solid #000; /* Borda preta */
     border-radius: 10px; /* Cantos arredondados */
@@ -80,8 +85,32 @@ h3 {
 }
 /* Estiliza o título dos cartões (h5) com negrito e cor azul. */
 
-#conteudos {
-    margin-left: 300px;
+h3{
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    color:#002b9f;
+}
+
+div#conteudos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: 0px 10px auto;
+}
+
+div#conteudos > h5{
+    color:#007bff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+li{
+    margin: 15px 0px;
 }
 /* Aplica uma margem à esquerda de 300px na seção de conteúdos, deslocando-a para a direita em relação ao contêiner pai. */
 
@@ -208,4 +237,3 @@ footer {
     }
     
 }
-
