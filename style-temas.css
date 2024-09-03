@@ -1,48 +1,50 @@
 /* styles.css */
 
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
   
-  body{
-    overflow-x: hidden;
-  
+body{
+  overflow-x: hidden;
+
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-social {
-      justify-content: center;
-      margin-top: 20px;
-    }
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
   }
+}
 
-/* Centraliza o contêiner de provas */
-.container-provas {
+main{
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* Estilo do grid de provas */
 .provas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
-  gap: 10px; /* Espaçamento entre os cards */
-  max-width: 1200px; /* Largura máxima do grid, ajuste conforme necessário */
-  margin: 0 auto; /* Centraliza horizontalmente o grid dentro do contêiner pai */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1150px;
 }
 
 .card-header {
   text-align: center; /* Centraliza o texto*/
   background-color: #1F5372;
   color: #ffff;
-
 }
 
 .card-text{
@@ -56,4 +58,18 @@
 
 .card {
   border: 1px solid #1F5372; 
+  flex-basis: calc(33.33% - 10px);
+  margin: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 10px); /* 50% para telas médias, como tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-basis: calc(100% - 10px); /* 100% para telas pequenas, como smartphones */
+  }
 }

@@ -101,18 +101,17 @@ button {
   width: 110px; /* Botão ocupa toda a largura do card */
   height: 40px;
   margin-top: 15px;
+  transition: 0.4s ease;
 }
 
 button:hover {
-  background-color: #5C93AA;
+  background-color: #12569b;
   color: #fff;
 }
 
 /* Estiliza o parágrafo que exibe o resultado */
-p#result {
-  font-size: 1.2rem;
-  font-weight: bold;
+#result {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #003366;
 }
