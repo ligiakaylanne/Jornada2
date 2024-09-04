@@ -29,16 +29,16 @@ body {
 
 .card-custom h5 {
   font-weight: bold; /* Define o texto em negrito */
-  color: #002b9f; /* Define a cor do texto como azul */
+  color: #003366; /* Define a cor do texto como azul */
 }
 
 /* Estilos para diferentes títulos */
 h6 {
-  color: #002b9f; /* Define a cor do texto como azul */
+  color: #003366; /* Define a cor do texto como azul */
 }
 
 h3 {
-  color: #002b9f; /* Define a cor do texto como azul */
+  color: #003366; /* Define a cor do texto como azul */
 }
 
 /* Estilos adicionais */
