@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style-padrao.css">
-</head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Jornada Enem</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto"> <!-- Use ms-auto para empurrar os itens para o lado direito -->
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/provas.html">Provas</a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadora.html">Calculadora</a></li>
-        <li class="nav-item"><a class="nav-link" href="/cronometro.html">Cronômetro</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Redação</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/dicas.html">Dicas</a></li>
-            <li><a class="dropdown-item" href="folha-redacao.pdf">Folha em PDF</a></li>
-            <li><a class="dropdown-item" href="/temas-redacoes.html">Temas</a></li>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Jornada Enem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto"> <!-- Use ms-auto para empurrar os itens para o lado direito -->
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/provas.html">Provas</a></li>
+            <li class="nav-item"><a class="nav-link" href="/calculadora.html">Calculadora</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cronometro.html">Cronômetro</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Redação</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/dicas.html">Dicas</a></li>
+                <li><a class="dropdown-item" href="#">Folha em PDF</a></li>
+                <li><a class="dropdown-item" href="/temas-redacoes.html">Temas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/professores.html">Professores</a></li>
           </ul>
         </div>
       </div>
@@ -252,208 +255,32 @@
 
     <br><br>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <a href="calculadora.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cálculo de Nota</h5>
-          <p class="card-text">Utilize nossa Calculadora para descobrir qual foi sua nota!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="dicas.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Redação</h5>
-          <p class="card-text">Vamos te dar dicas para eficiência na sua redação!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="provas.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Provas</h5>
-          <p class="card-text">Tenha acesso às provas de outras edições!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="cronometro.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cronômetro</h5>
-          <p class="card-text">Cronometre seu tempo enquanto faz sua redação ou simulado!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="professores.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Sugestões e Indicações</h5>
-          <p class="card-text">Vamos te dar sugestões de cursinhos e professores!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col">
-    <a href="temas-redacoes.html" class="text-decoration-none">
-      <div class="card">
-        <img src="/imagens/home/login-removebg-preview (1) (1).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Temas</h5>
-          <p class="card-text">Aqui você saberá os temas que já caíram no Enem!</p>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-
-<br><br>
-
-<!-- duvidas -->
-<!-- <h3 class="title-h1-main" >Dúvidas Frequentes</h3> -->
-<div class="faq-container">
-  <h1 class="title-h1-main">Dúvidas Frequentes</h1>
-  <div class="faq-cards">
-    <div class="faq-item">
-      <button class="faq-question">
-        Como faço para acessar as ferramentas de cálculo de nota do ENEM?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Para acessar as ferramentas de cálculo de nota do ENEM, vá para a seção "Calculadora de Notas" no menu de navegação.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Onde encontro dicas de cursinhos para o ENEM?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Você pode encontrar dicas de cursinhos na seção "Cursinhos" no menu de navegação.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Como baixo folhas de redação em PDF?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Para baixar folhas de redação em PDF, acesse a seção "Redação" no menu de navegação.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Qual é a importância do ENEM para minha educação?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        O ENEM desempenha um papel importante no ingresso em universidades e instituições de ensino superior.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Como faço para me preparar para o ENEM?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        A preparação para o ENEM envolve estudo consistente, prática de exercícios e revisão de conteúdo. Você pode encontrar mais dicas e conteúdos úteis em nosso site.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Onde posso encontrar informações sobre as datas do ENEM e como me inscrever?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Informações sobre as datas do ENEM e detalhes de inscrição podem ser encontradas no site oficial do INEP.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Como entro em contato com o suporte técnico em caso de problemas técnicos?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Você pode entrar em contato com nosso suporte técnico enviando um e-mail para ligiakaylane24@gmail.com.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Onde posso encontrar mais informações sobre a redação do ENEM e dicas de escrita?
-        <i class="fas fa-chevron-down"></i>
-        <figure>
-          <img class="keyboard" src="/imagens/duvidas/keyboard_arrow_down.png">
-        </figure>
-      </button>
-      <div class="faq-answer">
-        Informações sobre a redação do ENEM e dicas de escrita podem ser encontradas na seção "Redação" no menu de navegação.
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="/script-home.js"></script>
-
-<br><br>
-<!--rodape-->
-
-<footer>
-  <div class="footer-container">
-      <div class="footer-section">
+    <!--rodape-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
           <h2>Jornada Enem</h2>
           <p>Quer ficar por dentro das novidades inovadoras e exclusivas, e ainda ver conteúdos incríveis? Então siga-nos nas redes sociais!</p>
         </div>
         <div class="footer-section">
           <h3>Links Úteis</h3>
           <ul>
-            <li><a href="/home.html">>Home</a></li>
-            <li><a href="/sobre.html">>Sobre Nós</a></li>
+            <li><a href="/index.html">>Home</a></li>
+            <li><a href="sobre.html">>Sobre Nós</a></li>
           </ul>
         </div>
         <div class="footer-section">
           <h3>Contate-Nos</h3>
           <ul>
-              <li><a href="mailto:jornadaenem2024@gmail.com">jornadaenem2024@gmail.com</a></li>
+            <li>>Rua De ...</li>
+            <li>>+55 (83) 9-8888-8888</li>
+            <li><a href="mailto:jornadaenem2024@gmail.com" target="_blank">jornadaenem2024@gmail.com</a></li>
           </ul>
         </div>
         <div class="footer-social">
           <ul>
-            <li><a href="https://www.instagram.com/jornada__enem?igsh=YTJ6bXNi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" target="_blank" rel="noopener"><img src="/imagens/rodape/3dac2f11fa95efd036fa4e9ef2777be9.png" alt="Instagram"></a></li>
+            <li><a href="https://www.instagram.com/jornada__enem?igsh=YTJ6bXNi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" target="_blank" rel="noopener"><img src="imagens/rodape/3dac2f11fa95efd036fa4e9ef2777be9.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="/imagens/rodape/94d1d65be911125037040607554fdb31.png" alt="LinkedIn"></a></li>
           </ul>
         </div>
       </div>
