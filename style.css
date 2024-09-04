@@ -21,6 +21,9 @@ body {
 /* Remove margens das colunas */
 .row {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os elementos dentro da row */
 }
 
 /* Estilo para o carrossel */
@@ -49,7 +52,7 @@ body {
 /* Estilo básico para o card */
 .card {
   max-width: 250px;
-  margin: 0 auto;
+  margin: 10px; /* Adiciona espaçamento entre os cards */
   padding: 1rem;
   text-align: center;
   background-color: #5C93AA; /* Azul claro suave */
@@ -58,6 +61,10 @@ body {
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
+  display: flex;
+  flex-direction: column; /* Garante que o conteúdo dentro do card seja disposto em coluna */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
 }
 
 .card:hover {
@@ -73,6 +80,13 @@ body {
   display: block;
   object-fit: contain;
   border-radius: 50%;
+}
+
+/* Para garantir que todos os cards dentro de uma linha tenham a mesma altura */
+.col {
+  display: flex;
+  align-items: stretch; /* Faz com que todos os cards na mesma linha tenham a mesma altura */
+  justify-content: center; /* Centraliza os cards dentro da coluna */
 }
 
 /* Estilo para um card personalizado */
